@@ -1,0 +1,20 @@
+$(document).ready(function()
+{
+    $('input[type="button"]').click(function()
+    {
+        var bday=$('input[id="day"]').val();
+        var bmonth=$('input[id="month"]').val();
+        var byear=$('input[id="year"]').val();
+        var date=new Date();
+        var day=date.getDate();
+        var month=date.getMonth();
+        var year=date.getFullYear();
+        var present=new Date(year,month,day);
+        var born=new Date(byear,bmonth,bday);
+
+
+        var diffDays = parseInt((present - born) / (1000 * 60 * 60 * 24)); 
+        
+        alert("Osoba je stara: " + diffDays + " dana");
+    })
+})

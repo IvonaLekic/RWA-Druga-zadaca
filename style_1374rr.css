@@ -1,0 +1,11 @@
+
+input{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.div1{
+    position:relative;
+    width:205px;
+    left:0;
+    border-bottom:1px solid rgba(128, 128, 128, 0.699);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $('button').click(function()
+                {
+                    $('input[id="reza"]').val(parseInt($('input[id="x"]').val()) + parseInt($('input[id="y"]').val()));
+                })
+            })
+        </script>
+    </head>
+    <body>
+        X = <input id="x" type="text">
+        <br>
+        Y = <input id="y" type="text">
+        <br>
+        <div class="div1">
+            <button id="zbroji">Zbroji</button>
+        </div>
+        <br>
+        REZULTAT = <input id="reza" type="text">
+    </body>
+</html>
